@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .nav-logo {
+      height: 50px;
+      width: auto;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, red, orange);
+      border: none;
+    }
+    .btn-outline-warning {
+      border-color: orange;
+      color: orange;
+    }
+    .btn-outline-warning:hover {
+      background-color: orange;
+      color: white;
+    }
+    .card img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-white shadow-sm py-3">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <a href="index.html" class="d-flex align-items-center text-decoration-none">
+        <img src="images/StringSavior Logo.png" alt="Logo" class="nav-logo me-2" />
+        <span class="fs-4 fw-bold text-dark">StringSavior</span>
+      </a>
+      <div class="d-flex gap-2 mt-3 mt-md-0">
+        <a href="login.php" class="btn btn-primary">Login</a>
+        <a href="register.php" class="btn btn-primary">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <main class="container py-5">
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6 text-center">
+        <img src="images/StringSavior Logo.png" alt="Logo" class="img-fluid" />
+      </div>
+      <div class="col-md-6">
+        <div class="bg-white p-4 rounded shadow-sm">
+          <h1 class="fw-bold">Connecting Musical Communities</h1>
+          <p>Bridging the gap between musicians, instrument technicians, and parts suppliers in underserved areas.</p>
+          <p>The future of instrument care is here.</p>
+          <p class="fw-bold">“With just one tap, your luthier is on the way.”</p>
+          <a href="login.php" class="btn btn-primary me-2">JOIN NOW →</a>
+          <a href="register.php" class="btn btn-secondary">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Challenges Section -->
+    <section class="text-center mb-5">
+      <h2 class="mb-4">The Challenges We Address</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+<img src="images/technician.png" alt="Technician Icon" class="mx-auto d-block mb-3" style="width: 60px; height: 60px;" />
+            <h5 class="mt-3">Limited Access to Technicians</h5>
+            <p>Many rural and underserved areas lack certified musical instrument technicians, making repairs difficult and costly.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+<img src="images/cultural-barriers.png" alt="Culture Icon" class="mx-auto d-block mb-3" style="width: 60px; height: 60px;" />
+            <h5 class="mt-3">Cultural Barriers</h5>
+            <p>Non-mainstream artistic interests often face limited acceptance in communities with different dominant social trends.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+<img src="images/spare-parts.png" alt="Parts Icon" class="mx-auto d-block mb-3" style="width: 60px; height: 60px;" />
+            <h5 class="mt-3">Spare Parts Scarcity</h5>
+            <p>Local markets often have limited availability of specialized spare parts needed for instrument maintenance and repair.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Platform Stakeholders -->
+    <section class="text-center mb-5">
+      <h2 class="mb-2">How does StringSavior Work</h2>
+      <p class="text-muted mb-4">Our platform connects three key stakeholders in the musical ecosystem.</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+<img src="images/music-note.png" alt="Musician Icon" class="mx-auto d-block mb-3" style="width: 60px; height: 60px;" />
+            <h5 class="mt-3">Musicians</h5>
+            <p>Find certified technicians, connect with other musicians, and source rare parts for your instruments.</p>
+            <a href="register.php?type=musician" class="btn btn-outline-warning">Join as Musician</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+<img src="images/luthier-logo.png" alt="Luthier Icon" class="mx-auto d-block mb-3" style="width: 60px; height: 60px;" />
+            <h5 class="mt-3">Luthiers</h5>
+            <p>Showcase your expertise, expand your client base, and connect with musicians who need your services.</p>
+            <a href="register.php?type=luthier" class="btn btn-outline-warning">Join as Luthier</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 h-100">
+<img src="images/music_store_owner-logo.png" alt="Store Owner Icon" class="mx-auto d-block mb-3" style="width: 60px; height: 60px;" />
+            <h5 class="mt-3">Store Owners</h5>
+            <p>List your inventory, reach musicians in need of rare parts, and grow your business beyond local boundaries.</p>
+            <a href="register.php?type=store" class="btn btn-outline-warning">Join as Store Owner</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="text-center">
+      <h4>Join Our Community Today</h4>
+      <p>Whether you're a musician, luthier, or store owner, <strong>StringSavior</strong> has a place for you.</p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="register.php" class="btn btn-primary">Create an Account</a>
+        <a href="login.php" class="btn btn-secondary">Login</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
